@@ -204,6 +204,8 @@ margin-bottom: 1rem;
 color: #FFFFFF ;
 font-size: 1rem;
 text-align: center;
+opacity: 0.6;
+
   
 }
 .thousands{
@@ -245,6 +247,8 @@ opacity: 0.8;
 
 }
 
+
+/* Why Choose TechWave */
 
 .why-choose{
  background: rgba(35, 14, 61, 1);
@@ -352,8 +356,408 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0%;
 text-align: left;
+opacity: 0.6;
+
 }
 
 
+
+/* FEATURED EPISODES SECTION */
+
+.featured-episodes{
+  background: rgba(26, 11, 46, 1);
+  padding: 6rem 0; 
+  color: #fff;
+}
+
+
+.featured-episodes .section-header{
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.featured-episodes .section-header h2{
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+
+.episodes-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+
+
+.episode-card{
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.04),
+    0 18px 40px rgba(0,0,0,0.35);
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.episode-card:hover{
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+
+.episode-thumbnail{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.episode-thumbnail iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.episode-content{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.episode-content h3{
+color: #FFFFFF ;
+font-size: 1.25rem;
+font-weight: 700;
+text-align: left;
+}
+
+.episode-content p{
+ color: -#FFFFFF;
+font-size: 1rem;
+font-weight: 400;
+text-align: left;
+opacity: 0.6;
+
+}
+
+
+.episode-duration{
+  margin-top: auto;
+  font-size: 1rem;
+  color: #2cff8f;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.episode-duration i{
+  font-size: 0.75rem;
+}
+/* HOST CARD*/
+
+.meet-host{
+  padding: 6rem 0;
+  background: rgba(26, 11, 46, 1);
+}
+
+.host-card{
+  background: rgba(255,255,255,0.05);
+  border-radius: 22px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.04),
+    0 20px 45px rgba(0,0,0,0.4);
+}
+
+
+.host-image img{
+  width: 100%;
+  height: 100%;
+ /* Vector */
+width: 200px;
+height: 200px;
+}
+
+.host-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: #fff;
+}
+
+.host-info h3{
+color: -#FFFFFF;
+font-size: 2rem;
+font-weight: 700;
+text-align: left;
+
+}
+
+.host-info p{
+ color:#FFFFFF;
+font-size: 1rem;
+font-weight: 400;
+text-align: left;
+opacity: 0.6;
+
+}
+
+
+.host-social{
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.host-social a{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.host-social a:hover{
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.15);
+}
+
+.host-social img{
+  width: 16px;
+  height: 16px;
+}
+
+/* FOOTER SECTION */
+
+.footer{
+  height: 412px;
+  padding: 4.5rem 0 3rem;
+  background: 
+  
+    url("../assets/footer-bg.png") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.footer-wrapper{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+.footer-platforms{
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+
+}
+
+.footer-platforms a{
+  display: flex;
+  align-items: center;
+   
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.footer-platforms img{
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.footer-line{
+  width: 100%;
+  max-width: 520px;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+
+  /* container */
+  .container{
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  .nav-logo h1{
+    font-size: 1.8rem;
+  }
+
+  
+  .banner-section{
+    height: auto;
+    padding: 3rem 0;
+  }
+
+
+  .podcast-circle{
+    width: 260px;
+    height: 260px;
+  }
+
+  .circle-icon img{
+    width: 120px;
+  }
+
+  .badge-new{
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    top: 12px;
+    right: 12px;
+  }
+
+  .banner-title{
+    font-size: 2rem;
+  }
+
+  .banner-description{
+    font-size: 0.85rem;
+  }
+
+  .banner-actions{
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .banner-actions button{
+    width: 100%;
+  }
+
+  
+  .about-section{
+    padding: 3rem 1rem;
+  }
+
+  .about-content h2{
+    font-size: 2rem;
+  }
+
+  .about-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card h4{
+    font-size: 2rem;
+  }
+
+  .why-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .why-card,
+  .why-card-large{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    padding: 2rem;
+  }
+
+  .why-card-large{
+    padding: 2rem;
+  }
+
+  .why-card h3{
+    font-size: 1.1rem;
+  }
+
+  .why-card p{
+    font-size: 0.9rem;
+  }
+
+
+  .episodes-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .episode-content h3{
+    font-size: 1.1rem;
+  }
+
+  .episode-content p{
+    font-size: 0.9rem;
+  }
+
+  .host-card{
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .host-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .host-info h3{
+    font-size: 1.5rem;
+     text-align: center;
+  }
+
+  .host-info p{
+    font-size: 0.9rem;
+    text-align: center;
+
+  }
+
+  .host-social{
+    justify-content: center;
+  }
+
+  /* ================= FOOTER ================= */
+  .footer{
+    
+    height: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .footer-wrapper{
+    padding: 2rem 0;
+  }
+
+  .footer-brand img{
+    width: 100%;
+    
+  }
+
+  .footer-platforms{
+    gap: 1rem;
+    justify-content: center;
+  }
+
+
+}
 
 
