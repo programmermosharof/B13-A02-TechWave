@@ -704,19 +704,22 @@ opacity: 0.6;
 
 
   .podcast-circle{
-    width: 260px;
-    height: 260px;
+    /* Group 17 */
+width: 180px;
+height: 180px;
+   margin-top: 3rem;
   }
 
  .circle-icon img{
-    width: 100%;
+    width: 50px;
+  
   }
 
   .badge-new{
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
-    top: 12px;
-    right: 12px;
+     font-size: 16px;
+    padding: 8px 16px 8px 16px;
+    top: -12px;
+    right: -12px;
   }
 
   .banner-title{
